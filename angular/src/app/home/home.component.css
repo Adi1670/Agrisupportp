@@ -1,5 +1,116 @@
-img{
-    display: block; 
-    width: 100%;
-    height: 500px;
+/* Global Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+/* Main Container for AGRI SUPPORT Section */
+.agri-support-container {
+  background-color: cornsilk;
+  padding: 40px;
+  border-radius: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-weight:bold;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Services Section */
+.services-section {
+  padding: 60px 20px;
+  background-color: black;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4CAF50;
+  /*color:dodgerblue;*/
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  background-color: black;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30%;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Hover Effect for Service Cards */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .agri-support-container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .services-section h2 {
+    font-size: 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card img {
+    height: 150px;
+  }
 }

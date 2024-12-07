@@ -14,8 +14,10 @@ app.use(express.static(staticDir))
 const userRoutes = require("./routes/user.routes")
 const productRoutes = require("./routes/product.routes")
 const categoryRoutes = require("./routes/category.routes")
+const razorpayRoutes = require("./routes/razorpay.route")
 app.use("/user", userRoutes)
 app.use("/product", productRoutes)
 app.use("/category", categoryRoutes)
+app.use("/razorpay", razorpayRoutes)
 
 module.exports = app

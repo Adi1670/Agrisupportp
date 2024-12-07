@@ -21,6 +21,8 @@ import { ProfileComponent } from './pages/user/profile/profile.component';
 import { RegisterComponent } from './pages/user/register/register.component';
 import { SingleuserComponent } from './pages/user/singleuser/singleuser.component';
 import { IsloginGuard } from './providers/guards/islogin.guard';
+import { HelloComponent } from './hello/hello.component';
+import { CropyieldComponent } from './pages/cropyield/cropyield.component';
 
 const routes: Routes = [
   {path: "", component:HomeComponent},
@@ -55,7 +57,8 @@ const routes: Routes = [
       {path:"edit/:id", component:EditcategoryComponent, canActivate: [IsloginGuard]},
       {path:"delete/:id", component:DelcategoryComponent, canActivate: [IsloginGuard]},
     ]}
-  ]}
+  ]},
+  {path: "cropyield", component:CropyieldComponent}
 ];
 
 @NgModule({

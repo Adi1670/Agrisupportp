@@ -1,4 +1,14 @@
-h1{
+.heading-wrapper {
+    text-align:justify;
+    background-color: black; /* Background color for the border */
+    display: inline-block; /* Fit the heading size */
+    padding: 10px;
+    border: double 5px black; /* Same border as the h1 */
+    border-radius: 20px;
+}
+
+h1 {
+    margin: 0; /* Remove margin to align with wrapper */
+    color:darkturquoise;
     text-align: center;
-    color: #276b86;
 }

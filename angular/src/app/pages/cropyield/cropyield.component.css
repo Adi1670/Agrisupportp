@@ -1,0 +1,41 @@
+/* Center the content */
+:host {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 50vh; /* Full viewport height */
+    background-color: #f0f4f8; /* Light background */
+  }
+  
+  /* Description text */
+  .description {
+    font-size: 14px; /* Small font size */
+    color: #333; /* Dark gray text */
+    margin-bottom: 10px; /* Space between text and link */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Styled link */
+  .styled-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px; /* Small font size */
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0078d7; /* Blue background */
+    padding: 6px 12px; /* Small padding for the button */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .styled-link:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .styled-link:active {
+    background-color: #003f7f; /* Even darker blue when clicked */
+  }
+  

@@ -9,6 +9,7 @@ import { Product } from 'src/app/models/product';
 export class ProductService {
 
   baseUrl = "http://localhost:3000/product/"
+  razorpayUrl = "http://localhost:3000/razorpay/"
 
   constructor(private _http:HttpClient) { }
 
@@ -29,6 +30,9 @@ export class ProductService {
   }
   myProducts():Observable<any>{
     return this._http.get(`${this.baseUrl}myProducts`)
+  }
+  createorder(price: any):Observable<any>{
+    return this._http.post(`${this.razorpayUrl}createOrder`,{price})
   }
   imgUpload(id: string, data: any):Observable<any>{
     return this._http.post(`${this.baseUrl}productImg/${id}`, data)

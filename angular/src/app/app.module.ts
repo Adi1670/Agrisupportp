@@ -29,6 +29,8 @@ import { AllcategoriesComponent } from './pages/category/allcategories/allcatego
 import { DelcategoryComponent } from './pages/category/delcategory/delcategory.component';
 import { ProductsComponent } from './pages/category/products/products.component';
 import { EditcategoryComponent } from './pages/category/editcategory/editcategory.component';
+import { HelloComponent } from './hello/hello.component';
+import { CropyieldComponent } from './pages/cropyield/cropyield.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { EditcategoryComponent } from './pages/category/editcategory/editcategor
     AllcategoriesComponent,
     DelcategoryComponent,
     ProductsComponent,
-    EditcategoryComponent
+    EditcategoryComponent,
+    HelloComponent,
+    CropyieldComponent
   ],
   imports: [
     BrowserModule,
