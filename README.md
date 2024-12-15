@@ -1,6 +1,6 @@
-# E-commerce MEAN Stack App
+# Agri Support MEAN Stack App
 
-The E-commerce MEAN App combines the power of MongoDB, ExpressJS, Angular, and Node.js with the design and user interactions with the products.
+The Agri Support MEAN App combines the power of MongoDB, ExpressJS, Angular, and Node.js with the design and user interactions with the products.
 
 ## Installation and Setup
  
